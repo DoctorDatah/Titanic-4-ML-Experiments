@@ -1,4 +1,4 @@
-# About Repository 
+# Titanic Machine Learning Problem
 
 Contains different attempts and techniques that I used to solve and improve Titanic Problem. 
 
