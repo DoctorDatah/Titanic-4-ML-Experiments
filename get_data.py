@@ -59,8 +59,8 @@ def stratified_split_data(raw_data, category):
     """
     split = StratifiedShuffleSplit(n_splits=1, test_size=0.2, random_state=40)
     for train_index,test_index in split.split(raw_data, raw_data[category]):
-        strat_train_set = raw_data.loc[train_index]
-        strat_test_set  = raw_data.loc[test_index]   
+        strat_train_set = raw_data.iloc[train_index]
+        strat_test_set  = raw_data.iloc[test_index]   
     save_stratified_data(strat_train_set, strat_test_set)
     
         
